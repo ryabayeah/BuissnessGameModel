@@ -67,14 +67,14 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(586, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 269);
+            this.panel1.Size = new System.Drawing.Size(316, 325);
             this.panel1.TabIndex = 0;
             // 
             // tBoughtCash
             // 
             this.tBoughtCash.AutoSize = true;
             this.tBoughtCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tBoughtCash.Location = new System.Drawing.Point(9, 163);
+            this.tBoughtCash.Location = new System.Drawing.Point(17, 175);
             this.tBoughtCash.Name = "tBoughtCash";
             this.tBoughtCash.Size = new System.Drawing.Size(16, 18);
             this.tBoughtCash.TabIndex = 14;
@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
             // 
             this.tCash.AutoSize = true;
             this.tCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tCash.Location = new System.Drawing.Point(8, 135);
+            this.tCash.Location = new System.Drawing.Point(17, 146);
             this.tCash.Name = "tCash";
             this.tCash.Size = new System.Drawing.Size(16, 18);
             this.tCash.TabIndex = 13;
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
             // nWantCash
             // 
             this.nWantCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nWantCash.Location = new System.Drawing.Point(10, 193);
+            this.nWantCash.Location = new System.Drawing.Point(11, 250);
             this.nWantCash.Name = "nWantCash";
             this.nWantCash.Size = new System.Drawing.Size(125, 22);
             this.nWantCash.TabIndex = 12;
@@ -128,7 +128,7 @@ namespace WindowsFormsApp1
             // bSell
             // 
             this.bSell.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bSell.Location = new System.Drawing.Point(71, 222);
+            this.bSell.Location = new System.Drawing.Point(71, 278);
             this.bSell.Name = "bSell";
             this.bSell.Size = new System.Drawing.Size(62, 35);
             this.bSell.TabIndex = 8;
@@ -139,7 +139,7 @@ namespace WindowsFormsApp1
             // bBuy
             // 
             this.bBuy.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bBuy.Location = new System.Drawing.Point(8, 221);
+            this.bBuy.Location = new System.Drawing.Point(8, 278);
             this.bBuy.Name = "bBuy";
             this.bBuy.Size = new System.Drawing.Size(57, 35);
             this.bBuy.TabIndex = 7;
@@ -151,7 +151,7 @@ namespace WindowsFormsApp1
             // 
             this.lCash.AutoSize = true;
             this.lCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lCash.Location = new System.Drawing.Point(7, 101);
+            this.lCash.Location = new System.Drawing.Point(7, 109);
             this.lCash.Name = "lCash";
             this.lCash.Size = new System.Drawing.Size(98, 24);
             this.lCash.TabIndex = 6;
@@ -175,7 +175,7 @@ namespace WindowsFormsApp1
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button1.Location = new System.Drawing.Point(225, 221);
+            this.button1.Location = new System.Drawing.Point(225, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 35);
             this.button1.TabIndex = 4;
@@ -213,7 +213,7 @@ namespace WindowsFormsApp1
             series1.Name = "Series1";
             series1.SmartLabelStyle.Enabled = false;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(574, 269);
+            this.chart1.Size = new System.Drawing.Size(574, 325);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             // 
@@ -221,7 +221,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 303);
+            this.ClientSize = new System.Drawing.Size(914, 381);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

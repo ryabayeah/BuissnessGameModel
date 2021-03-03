@@ -26,10 +26,10 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             chart1.ChartAreas[0].AxisX.ScrollBar.Enabled = true;
-            var rate = exchanger.GetRate((double)nRate.Value);
-            chart1.Series[0].Points.AddXY(exchanger.days++, rate);
+            exchanger.rate = exchanger.GetRate((double)nRate.Value);
+            chart1.Series[0].Points.AddXY(exchanger.days++, exchanger.rate);
             chart1.ChartAreas[0].AxisX.ScaleView.Size = 30;
-            nRate.Value = (decimal)rate;
+            nRate.Value = (decimal)exchanger.rate;
 
             if (exchanger.days <= 30) return;
             chart1.ChartAreas[0].AxisX.ScrollBar.IsPositionedInside = true;
@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
 
         private void bBuy_Click(object sender, EventArgs e)
         {
-            (tCash.Text ,tBoughtCash.Text) = exchanger.Buy((double)nRate.Value, (double)nWantCash.Value);
+            (tCash.Text, tBoughtCash.Text) = exchanger.Buy((double)nRate.Value, (double)nWantCash.Value);
             (bBuy.Enabled, bSell.Enabled) = exchanger.CheckCash();
 
             if (exchanger.cash <= 0 & exchanger.boughtCash <= 0)
@@ -76,6 +76,7 @@ namespace WindowsFormsApp1
             (tCash.Text, tBoughtCash.Text) = exchanger.GetFormatedCash();
             chart1.Series[0].Points.Clear();
             nRate.Value = (decimal)exchanger.GetRate((double)nRate.Value);
+            exchanger.rate = (double)nRate.Value;
             chart1.Series[0].Points.AddXY(0, (double)nRate.Value);
             bDollar.BackColor = Color.Gray;
             bEuro.BackColor = Color.White;
@@ -104,21 +105,22 @@ namespace WindowsFormsApp1
         }
 
         public double GetRate(double currentRate) { return currentRate * (1 + k * (random.NextDouble() - 0.5)); }
-        
-        public (string,string) GetFormatedCash()
-        {
-            return (cash + currencyCash, boughtCash + currency);
-        }
+
+        public (string, string) GetFormatedCash() { return (cash + currencyCash, boughtCash + currency); }
+
         public (string, string) Buy(double rate, double quantity)
         {
-            cash -= rate * quantity;
+            if (cash - Math.Round(rate * quantity, 2) < 0){ quantity = (int)(cash / rate); };
+            cash -= Math.Round(rate * quantity, 2);
             boughtCash += quantity;
             return GetFormatedCash();
         }
 
-        public (string,string) Sell(double rate, double quantity)
+        public ( string, string) Sell(double rate, double quantity)
         {
-            cash += rate * quantity;
+            if (boughtCash - quantity < 0) { quantity = boughtCash; }
+            Console.WriteLine(quantity);
+            cash += Math.Round(rate * quantity, 2);
             boughtCash -= quantity;
             return GetFormatedCash();
         }
