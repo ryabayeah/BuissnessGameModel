@@ -1,0 +1,10 @@
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Ryaba\Desktop\учеба 3 курс\d\BuisnessModel\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
